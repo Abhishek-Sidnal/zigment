@@ -64,10 +64,15 @@ Ensure you have the following installed:
 ```json
 {
   "formTitle": "User Registration Form",
-  "formDescription": "Fill in your details below.",
+  "formDescription": "Please fill in your details below.",
   "fields": [
     { "label": "Name", "type": "text", "id": "name", "required": true },
     { "label": "Email", "type": "email", "id": "email", "required": true },
-    { "label": "Gender", "type": "select", "id": "gender", "options": ["Male", "Female", "Other"] }
-  ]
+    { "label": "Message", "type": "textarea", "id": "message" },
+    { "label": "Gender", "type": "select", "id": "gender",
+      "options": [
+     { "value": "Male", "label": "Male" },
+     { "value": "Female", "label": "Female" },
+     { "value": "Other", "label": "Other" }]
+    }]
 }
