@@ -11,8 +11,12 @@ const initialJson = `
     { "label": "Name", "type": "text", "id": "name", "required": true },
     { "label": "Email", "type": "email", "id": "email", "required": true },
     { "label": "Message", "type": "textarea", "id": "message" },
-    { "label": "Gender", "type": "select", "id": "gender", "options": ["Male", "Female", "Other"] }
-  ]
+    { "label": "Gender", "type": "select", "id": "gender",
+      "options": [
+     { "value": "Male", "label": "Male" },
+     { "value": "Female", "label": "Female" },
+     { "value": "Other", "label": "Other" }]
+    }]
 }`;
 
 function App() {
