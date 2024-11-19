@@ -27,7 +27,7 @@ const FormGenerator = ({ schema }) => {
 
   const onSubmit = (data) => {
     setFormData(data);
-    console.log("Form Data:", data);
+    console.log("Form Data:", formData);
     alert("Form submitted successfully!");
   };
 
